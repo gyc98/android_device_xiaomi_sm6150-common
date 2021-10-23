@@ -15,10 +15,13 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.aosp.settings.doze;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
+
+import org.aosp.settings.R;
+import org.aosp.settings.utils.FileUtils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,9 +36,6 @@ import android.provider.Settings;
 import android.util.Log;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceManager;
-
-import org.lineageos.settings.R;
-import org.lineageos.settings.utils.FileUtils;
 
 public final class DozeUtils {
     private static final String TAG = "DozeUtils";
